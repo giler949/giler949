@@ -1,0 +1,113 @@
+orking with GitHub
+GitHub is a popular remote storage system for repositories. Public repositories are free and it’s relatively cheap to get private repositories. Students can get private repositories for free. You’ll be using GitHub in this module along with Visual Studio Code and Git which you have just installed. You will be using Git to pull and push repositories (your code) to and from GitHub and your local machine.
+
+Getting started
+Go to GitHub and create an account to get started. Once you’re done you will see the welcome page shown in Fig.5.12.
+
+
+
+Fig. 5.12 Welcome page
+
+© The Open Polytechnic of New Zealand
+
+Development workflow
+At this point you can either create a new repository or clone an existing one. It’s often easier to use the Github website to set up a repository.
+
+Go to your Github account and choose ‘Start a Project’. This should display the screen shown in Figure 5.13. Provide a short name for your project (‘matahi’), an optional description (‘Matahi historical society project’ and initialize the repository with a README. Choose the default public access unless you have a paid account. 
+
+
+
+Fig. 5.13 Create a new repository
+
+© The Open Polytechnic of New Zealand
+
+It’s good practice to create a README file to provide more information about your project. Once you have provided all of these details, choose ‘Create a Repository’. You should see the repository main screen (Figure 5.14).
+
+
+
+Fig. 5.14 The Matahi repository
+
+© The Open Polytechnic of New Zealand
+
+Copy the repository URL and then open Visual Studio (VS) Code. Then open a new VS Code window and type Ctrl/Cmd + Shift + P to open the command palette. In the window, type `Git: Clone` and select it. Paste in the repository URL and complete the command using enter (see Figure 5.15).
+
+
+
+Fig. 5.15 Entering the repository URL
+
+© The Open Polytechnic of New Zealand
+
+Select a location to save the repository. Use the same development directory as you’ve been working with during this course. This is the parent directory for the cloned repository (see Figure 5.16).
+
+
+
+Fig. 5.16 Select a folder on your local machine for the local copy of the repository
+
+© The Open Polytechnic of New Zealand
+
+The repository will be downloaded and you’ll be prompted to ask if you want to ‘Open Repository’. Choose ‘OK’ and in the explorer panel, you should be able to see your repository (Figure 5.17).
+
+
+
+Fig. 5.17 File explorer screen showing repository MATAHI
+
+© The Open Polytechnic of New Zealand
+
+Hover over the name of repository to reveal the management toolbar (Figure 5.18).
+
+
+
+Fig. 5.18 Management toolbar
+
+© The Open Polytechnic of New Zealand
+
+Select the ‘New File’ icon and create a file ‘index.html’ (Figure 5.19).
+
+
+
+Fig. 5.19 File explorer showing the new file ‘index.html’
+
+© The Open Polytechnic of New Zealand
+
+Git will track the changes for you automatically. Note the U next to the name, which indicates that it’s not yet committed to the repository. Click on the index.html to open the editor in the right-hand pane. Add the following code.
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Matahi Historical Society homepage</title>
+    <link rel="stylesheet" href="styles/styles.css">
+  </head>
+  <body>
+    <!-- Here is our main header that is used across all the pages of our website -->
+    <header class="header">
+      <h1>Matahi Historical Society</h1>
+    </header>
+    <nav class="topnav">
+      <a href="#" class="topnav">Home</a></li>
+      <a href="#" class="topnav">Browse photos</a></li>
+      <a href="#" class="topnav">Submit photos</a></li>
+      <a href="#" class="topnav">Contact</a></li>
+    </nav>
+    <!-- Here is our page's main content -->
+    <main>
+      <div class="row">
+        <div class="column">
+          <h2>Column 1</h2>
+          <p>Paragraph 1.</p>
+          <p>Paragraph 2.</p>
+        </div>
+        <div class="column">
+          <h2>Column 2</h2>
+          <p>Paragraph 1.</p>
+          <p>Paragraph 2.</p>
+        </div>
+      </div>
+    </main>
+    <!-- And here is our main footer that is used across all the pages of our website -->
+    <footer class="footer">
+      <p>©Copyright 2018 by Matahi Historical Society. All rights reversed.</p>
+    </footer>
+  </body>
+</html>
